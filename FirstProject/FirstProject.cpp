@@ -1,6 +1,8 @@
 #include <iostream>
-
+// main() - начало выполнения программы.
 int main()
 {
-    std::cout << "Hello World!\n";
+	setlocale(LC_ALL, "Russian");
+	std::cout << "Это моя первая С++-программа.";
+	return 0;
 }
