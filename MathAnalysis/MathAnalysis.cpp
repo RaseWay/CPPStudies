@@ -1,19 +1,20 @@
 #include <iostream>
 #include <windows.h>
+#include <cmath>
 
 double f(double x)
 {
-	return x * x * x * x - x * x * x - 2 * (x * x) + 3 * x - 3;
+	return pow(x, 4) - pow(x, 3) - 2 * (pow(x, 2)) + 3 * x - 3;
 }
 
-double root(double f(double), double a, double b, double eps)
+double root(double a, double b, double eps)
 {
 	double c;
 	while ((b - a) > 2 * eps) //считаем пока не получим ответ в допустимой погрешности
 	{
 		c = (a + b) / 2; // делим интервал пополам
-		if ((f(a) * f(c)) > 0) // если при подстановке 'c' в функцию знак меняется, то мы заменяем первую границу на 'c'. иначе - вторую.
-		{
+		if (f(a) * f(c) > 0) // если произведение f(c) и f(a) положительно, т.е. f(a) и f(c) положительны или отрицательны, 
+		{					   // то мы заменяем первую границу на 'c'. иначе - вторую.
 			a = c;
 		}
 		else
@@ -32,7 +33,7 @@ int halfdevmeth()
 	std::cin >> a;
 	std::cout << "b: ";
 	std::cin >> b;
-	if ((f(a) * f(b)) > 0)
+	if (f(a) * f(b) > 0) //проверка интервала на валидность 
 	{
 		std::cout << "Неверный интервал или отсутствуют корни на заданном интервале. Попробуйте снова через 3 секунды.\n";
 		Sleep(3000);
@@ -43,7 +44,7 @@ int halfdevmeth()
 		std::cout << "eps: ";
 		std::cin >> eps;
 	}
-	x = root(f, a, b, eps);
+	x = root(a, b, eps);
 	std::cout << "x =" << x << std::endl;
 	return 0;
 }

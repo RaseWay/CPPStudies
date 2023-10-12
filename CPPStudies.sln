@@ -5,10 +5,6 @@ VisualStudioVersion = 17.7.34031.279
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Basics", "Basics", "{5818E662-4077-4FDB-B5C1-92AFE35DA607}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "FirstProject", "FirstProject\FirstProject.vcxproj", "{C3E2F94E-379D-4BE4-AD45-DAAF9FFAA10F}"
-EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SecondProj", "SecondProj\SecondProj.vcxproj", "{C074C27E-B1E9-42FD-96B0-B2350CB79122}"
-EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MathAnalysis", "MathAnalysis\MathAnalysis.vcxproj", "{B4040129-689F-4173-8DBB-875D80FA2CF3}"
 EndProject
 Global
@@ -19,22 +15,6 @@ Global
 		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{C3E2F94E-379D-4BE4-AD45-DAAF9FFAA10F}.Debug|x64.ActiveCfg = Debug|x64
-		{C3E2F94E-379D-4BE4-AD45-DAAF9FFAA10F}.Debug|x64.Build.0 = Debug|x64
-		{C3E2F94E-379D-4BE4-AD45-DAAF9FFAA10F}.Debug|x86.ActiveCfg = Debug|Win32
-		{C3E2F94E-379D-4BE4-AD45-DAAF9FFAA10F}.Debug|x86.Build.0 = Debug|Win32
-		{C3E2F94E-379D-4BE4-AD45-DAAF9FFAA10F}.Release|x64.ActiveCfg = Release|x64
-		{C3E2F94E-379D-4BE4-AD45-DAAF9FFAA10F}.Release|x64.Build.0 = Release|x64
-		{C3E2F94E-379D-4BE4-AD45-DAAF9FFAA10F}.Release|x86.ActiveCfg = Release|Win32
-		{C3E2F94E-379D-4BE4-AD45-DAAF9FFAA10F}.Release|x86.Build.0 = Release|Win32
-		{C074C27E-B1E9-42FD-96B0-B2350CB79122}.Debug|x64.ActiveCfg = Debug|x64
-		{C074C27E-B1E9-42FD-96B0-B2350CB79122}.Debug|x64.Build.0 = Debug|x64
-		{C074C27E-B1E9-42FD-96B0-B2350CB79122}.Debug|x86.ActiveCfg = Debug|Win32
-		{C074C27E-B1E9-42FD-96B0-B2350CB79122}.Debug|x86.Build.0 = Debug|Win32
-		{C074C27E-B1E9-42FD-96B0-B2350CB79122}.Release|x64.ActiveCfg = Release|x64
-		{C074C27E-B1E9-42FD-96B0-B2350CB79122}.Release|x64.Build.0 = Release|x64
-		{C074C27E-B1E9-42FD-96B0-B2350CB79122}.Release|x86.ActiveCfg = Release|Win32
-		{C074C27E-B1E9-42FD-96B0-B2350CB79122}.Release|x86.Build.0 = Release|Win32
 		{B4040129-689F-4173-8DBB-875D80FA2CF3}.Debug|x64.ActiveCfg = Debug|x64
 		{B4040129-689F-4173-8DBB-875D80FA2CF3}.Debug|x64.Build.0 = Debug|x64
 		{B4040129-689F-4173-8DBB-875D80FA2CF3}.Debug|x86.ActiveCfg = Debug|Win32
@@ -48,8 +28,6 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{C3E2F94E-379D-4BE4-AD45-DAAF9FFAA10F} = {5818E662-4077-4FDB-B5C1-92AFE35DA607}
-		{C074C27E-B1E9-42FD-96B0-B2350CB79122} = {5818E662-4077-4FDB-B5C1-92AFE35DA607}
 		{B4040129-689F-4173-8DBB-875D80FA2CF3} = {5818E662-4077-4FDB-B5C1-92AFE35DA607}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
